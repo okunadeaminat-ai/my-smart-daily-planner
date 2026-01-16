@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Smart Daily Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Smart Daily Planner</h1>
+    <p id="quote">“Plan your day! 😎”</p>
+  </header>
+
+  <section class="task-input">
+    <input type="text" id="task-input" placeholder="Enter your task">
+    <select id="priority-select">
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <button id="add-btn">Add Task</button>
+  </section>
+
+  <section class="filters">
+    <button id="filter-all">All</button>
+    <button id="filter-high">High</button>
+    <button id="filter-medium">Medium</button>
+    <button id="filter-low">Low</button>
+    <button id="filter-done">Done</button>
+    <button id="filter-pending">Pending</button>
+  </section>
+
+  <section id="task-list">
+    <!-- Task cards will appear here -->
+  </section>
+
+  <footer>
+    <p id="task-count">Total: 0 | Pending: 0</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
